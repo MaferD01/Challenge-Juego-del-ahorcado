@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <title>Juego del ahorcado</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="Juego_ahorcado.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <img id="logo" src ="imagenes/logo.svg">
+        </header>
+        <main> 
+            <section class="btnInicio">
+                <button onclick="iniciarJuego()">Iniciar Juego</button>
+                <button onclick="agregarPalabra()">Agregar Nueva Palabra</button>
+            </section>
+
+            <section class="IngresarPalabra">
+                <textarea class="palabra-agregada" placeholder="Ingrese una palabra"></textarea>
+                <legend>Máximo de 8 letras</legend>
+                <button onclick="modificarLista()" id="btnGuardar">Guardar y empezar</button>
+                <button onclick="volverInicio()">Cancelar</button>
+            </section>
+
+            <section class="horca">
+                <canvas class="tablero" width="1200" height="860" id="canvas"></canvas>
+                <p class="palabraOculta"></p>
+                <input maxlength="1" placeholder="ingrese su letra aqui" class="inputLetra" onkeydown="return /[a-z]/i.test(event.key)">
+                <legend class="letraIncorrecta"></legend>
+                <legend class="perder">Has Perdido!</legend>
+                <legend class="ganar">Has Ganado!</legend>
+                
+                <div class="btnFin">
+                    <button class="btnDesistir" onclick="btnNuevoJuego()">Desistir</button>
+                    <button class="btnNuevoJuego" onclick="btnNuevoJuego()">Nuevo juego</button>
+                </div>
+
+                
+            </section>
+        </main>
+        <script src="juego_ahorcado.js"></script> 
+    </body>
+</html>

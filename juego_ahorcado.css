@@ -1,0 +1,241 @@
+body {
+    min-height: 100vh;
+    padding: 0;
+    height: fit-content;
+    background-color: #e6e6fa;
+}
+
+header {
+    position: fixed;
+    top: 0;
+}
+
+header img {
+    width: 20vh;
+    height: 20vh;
+}
+
+#logo {
+    margin-top: 30px;
+    margin-left: 40px;
+    display: inline;
+    width: 80%;
+    height: 80%;
+}
+
+.btnInicio {
+    margin-top: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnInicio button {
+    margin: 0 20px 0 20px;
+    font-size: 30px;
+    border: solid #0A3871 3px;
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+} 
+
+.btnInicio button:first-child {
+    background: #0A3871;
+    color: white;
+    transition: 1s all;
+}
+.btnInicio button:first-child:hover {
+    box-shadow: 2px 2px 30px 5px;
+    color: #0A3871;
+}
+
+.btnInicio button:last-child {
+    background: #e6e6fa;
+    color: #0A3871;
+    transition: 1s all;
+}
+.btnInicio button:last-child:hover {
+    box-shadow: 2px 2px 30px 5px;
+    color: #0A3871;
+}
+
+
+.IngresarPalabra {
+    margin: 5% auto;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    max-width: 100vh;
+}
+
+.IngresarPalabra textarea {
+    margin: 10px 20px 10px 20px;
+    background: transparent;
+    color: black;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    width: 100vh;
+    height: 50vh;
+}
+
+.IngresarPalabra legend {
+    font-size: 20px;
+    color: gray;
+    margin: 30px 30px 30px 30px;
+}
+
+    .IngresarPalabra legend:before {
+        content: "🛈";
+    }
+
+.IngresarPalabra button {
+    margin: 0 20px 0 20px;
+    font-size: 20px;
+    border: solid #0A3871 3px;
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+    transition: 1s all;
+}
+
+#btnGuardar {
+    background: #0A3871;
+    color: white;
+}
+#btnGuardar:hover {
+    box-shadow: 2px 2px 30px 5px;
+    color: #0A3871;
+}
+
+.IngresarPalabra button:last-child {
+    background: #e6e6fa;
+    color: #0A3871;
+}
+.IngresarPalabra button:last-child:hover{
+    box-shadow: 2px 2px 30px 5px;
+    color: #0A3871;
+}
+
+.horca {
+    width: 1100px;
+    height: 700px;
+    background: transparent;
+    display: none;
+    margin: auto;
+    position: relative;
+    
+    
+}
+
+.tablero {
+    position: relative;
+    left: 35%;
+    width: 294px;
+    height: 360px;
+    background: transparent;
+    margin: 0 auto;
+    color: white;
+    
+    
+    
+}
+
+.horca p {
+    color: #0A3871;
+    font-size: 70px;
+    position: absolute;
+    left: 20%;
+    bottom: 60px;
+    margin: 200px 180px;
+}
+
+.horca input {
+    background: transparent;
+    position: absolute;
+    bottom: 30px;
+    left: 25%;
+    right: 25%;
+    font-size: 30px;
+    height: 100px;
+    border: none;
+    color: #0A3871;
+    margin: 120px;
+
+}
+
+.horca input:focus {
+    outline: none;
+}
+
+.horca input::placeholder {
+    color: gray;
+    opacity: 0.5;
+}
+
+.letraIncorrecta {
+    position: absolute;
+    bottom: 70px;
+    left: 35%;
+    color: #0A3871;
+    font-size: 35px;
+    
+}
+
+.perder {
+    display: none;
+    font-size: 40px;
+    color: #FFA07A;
+    position: absolute;
+    right: 200px;
+    top: 300px;
+}
+
+.ganar {
+    display: none;
+    font-size: 40px;
+    color: #CD5C5C;
+    position: absolute;
+    right: 200px;
+    top: 300px;
+}
+.btnFin{
+    position:relative;
+    top:100px;
+    left:50px;
+    width: 300px;
+    
+}
+
+.btnDesistir {
+    font-size: 20px;
+    border: solid #0A3871 3px;
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+    transition: 1s all;
+    color: white;
+    background: #0A3871;
+}
+
+    .btnDesistir:hover {
+        box-shadow: 2px 2px 30px 5px;
+        color: #0A3871;
+    }
+
+.btnNuevoJuego {
+    font-size: 20px;
+    border: solid #0A3871 3px;
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+    color: #0A3871;
+    transition: 1s all;
+    background: white;
+}
+
+.btnNuevoJuego:hover {
+    box-shadow: 2px 2px 30px 5px;
+    color: #0A3871;
+}
+    
